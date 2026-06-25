@@ -95,7 +95,8 @@ def calc_loss(tea_out, outputs, low_res_label_batch, label_batch, ce_loss, dice_
     weights = weights.view(1, 9, 1)
     teacher_eve_cla = comp_class_pro(low_res_label_batch, tea_out, num_classes=9)
     student_eve_cla = comp_class_pro(low_res_label_batch, outputs, num_classes=9)
-    proloss_l2 = nn.MSELoss()(teacher_eve_cla, student_eve_cla) * weights
+    mse = F.mse_loss(student_eve_cla, teacher_eve_cla, reduction='none')
+    proloss_l2 = (mse * weights).mean()
 
     loss2 = loss_l2 + proloss_l2
     
