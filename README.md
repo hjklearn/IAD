@@ -45,9 +45,9 @@ We provide the pre-trained weights for both the Teacher and Student models evalu
 
 | Dataset | Download Link |
 | :--- | :--- |
-| **Synapse** | [Download Here]() |
-| **ACDC** | [Download Here]() |
-| **Polyp** | [Download Here]() |
+| **Synapse** | [Download Here](https://github.com/SLDGroup/EMCAD) |
+| **ACDC** | [Download Here](https://github.com/SLDGroup/EMCAD) |
+| **Polyp** | [Download Here](https://github.com/Inha-CVAI/MADGNet) |
 
 *(Note: Replace the placeholder links above with your actual Google Drive / Baidu Pan / OneDrive links before publishing).*
 
@@ -78,7 +78,7 @@ python test.py --dataset Synapse --checkpoint ./weights/student_synapse_best.pth
 
 If you find our framework, code, or pre-trained models beneficial to your research, please consider citing our CVPR 2026 paper:
 
-```bibtex
+```
 @inproceedings{hong2026infusion,
   title={From Infusion to Assimilation Distillation for Medical Image Segmentation},
   author={Hong, Jiankang and Luo, Ye and Liu, Yinan and Yuan, Junsong},
@@ -86,13 +86,12 @@ If you find our framework, code, or pre-trained models beneficial to your resear
   pages={20985--20995},
   year={2026}
 }
-
+```
 
 ## 🙏 Acknowledgement
 
 We are very grateful for the following excellent open-source works, which have provided the solid basis for our framework:
 
-*   [timm]()
-*   [EMCAD]()
-*   [MADGNet]()
-*   [TransUNet]()
+*   [EMCAD](https://github.com/SLDGroup/EMCAD)
+*   [MADGNet](https://github.com/Inha-CVAI/MADGNet)
+*   [TransUNet](https://github.com/Beckschen/TransUNet)
