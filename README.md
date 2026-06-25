@@ -46,17 +46,17 @@ For dataset downloading and processing pipelines, our repository follows the sta
 
 ## 📦 Pre-trained Models
 
-We provide the pre-trained weights for both the Teacher and Student models in  *  **  training stage **. You can download them from the links below:
+We provide the pre-trained weights for both the Teacher and Student models in training stage . You can download them from the links below:
 
-| Dataset | Download Link |
+| Training Datasets | Model pre-trained weights Download Link |
 | :--- | :--- |
-| **Synapse** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
-| **ACDC** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
-| **Polyp** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Synapse** | [teacher pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **ACDC** | [teacher pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Polyp** | [teacher pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
 
-We provide the pre-trained weights for both the Teacher and Student models in  **knowledge distillation training stage **. You can download them from the links below:
+We provide the pre-trained weights for both the Teacher and Student models in knowledge distillation training stage. You can download them from the links below:
 
-| Dataset | Download Link |
+| Knowledge distillation training Datasets | Model pre-trained weights Download Link |
 | :--- | :--- |
 | **Synapse** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
 | **ACDC** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
