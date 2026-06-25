@@ -36,12 +36,7 @@ pip install -r requirements.txt
 
 For dataset downloading and processing pipelines, our repository follows the standards established by previous works. Please refer to the following links to prepare your datasets:
 
-*   **Download and Preparation:** Follow the instructions provided in the [MADGNet Repository]().
-*   **Processing Utilities:** Please utilize the `utils.py` script provided by EMCAD: [EMCAD/utils/utils.py]().
-
-## 📦 Pre-trained Models
-
-We provide the pre-trained weights for both the Teacher and Student models evaluated in our paper. You can download them from the links below:
+*   **Download and Preparation:** Follow the instructions provided in the [MADGNet Repository](https://github.com/Inha-CVAI/MADGNet) and [EMCAD Repository](https://github.com/SLDGroup/EMCAD).
 
 | Dataset | Download Link |
 | :--- | :--- |
@@ -49,12 +44,22 @@ We provide the pre-trained weights for both the Teacher and Student models evalu
 | **ACDC** | [Download Here](https://github.com/SLDGroup/EMCAD) |
 | **Polyp** | [Download Here](https://github.com/Inha-CVAI/MADGNet) |
 
+## 📦 Pre-trained Models
+
+We provide the pre-trained weights for both the Teacher and Student models evaluated in our paper. You can download them from the links below:
+
+| Dataset | Download Link |
+| :--- | :--- |
+| **Synapse** | [teacher](https://github.com/SLDGroup/EMCAD) and [student]()|
+| **ACDC** | [teacher](https://github.com/SLDGroup/EMCAD) and [student]()|
+| **Polyp** | [teacher](https://github.com/Inha-CVAI/MADGNet) and [student]()|
+
 *(Note: Replace the placeholder links above with your actual Google Drive / Baidu Pan / OneDrive links before publishing).*
 
 
 ## 🚀 Running the Code
 
-### 1. Training (Knowledge Distillation)
+### Training (Knowledge Distillation)
 
 To train the student model under our proposed Assimilation Distillation framework, run:
 
@@ -66,13 +71,22 @@ python train.py --dataset Synapse --batch_size 24 --lr 0.01 --teacher_path ./wei
 python train.py --dataset ACDC --batch_size 16 --lr 0.05 --teacher_path ./weights/teacher_acdc.pth
 ```
 
-### 2. Evaluation
+### Evaluation
 
 To evaluate the performance (e.g., Dice score, HD95) of the trained student model:
 
 ```
 python test.py --dataset Synapse --checkpoint ./weights/student_synapse_best.pth
 ```
+
+## 🙏 Acknowledgement
+
+We are very grateful for the following excellent open-source works, which have provided the solid basis for our framework:
+
+*   [EMCAD](https://github.com/SLDGroup/EMCAD)
+*   [MADGNet](https://github.com/Inha-CVAI/MADGNet)
+*   [TransUNet](https://github.com/Beckschen/TransUNet)
+
 
 ## 📝 Citation
 
@@ -87,11 +101,3 @@ If you find our framework, code, or pre-trained models beneficial to your resear
   year={2026}
 }
 ```
-
-## 🙏 Acknowledgement
-
-We are very grateful for the following excellent open-source works, which have provided the solid basis for our framework:
-
-*   [EMCAD](https://github.com/SLDGroup/EMCAD)
-*   [MADGNet](https://github.com/Inha-CVAI/MADGNet)
-*   [TransUNet](https://github.com/Beckschen/TransUNet)
