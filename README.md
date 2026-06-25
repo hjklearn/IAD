@@ -46,7 +46,7 @@ For dataset downloading and processing pipelines, our repository follows the sta
 
 ## 📦 Pre-trained Models
 
-We provide the pre-trained weights for both the Teacher and Student models in  **training stage **. You can download them from the links below:
+We provide the pre-trained weights for both the Teacher and Student models in  *  **  training stage **. You can download them from the links below:
 
 | Dataset | Download Link |
 | :--- | :--- |
