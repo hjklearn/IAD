@@ -59,24 +59,61 @@ We provide the pre-trained weights for both the Teacher and Student models evalu
 
 ## 🚀 Running the Code
 
-### Training (Knowledge Distillation)
+### Training
+
+To train the teacher and student model, run:
+
+```
+# Example for teacher and on Synapse dataset
+CUDA_VISIBLE_DEVICES="0"  python train.py  --split='train' --warmup --AdamW --max_epochs=300 --stop_epoch=300 --vit_name='vit_l'
+```
+
+```
+# Example for teacher and on Polyp dataset
+python train_isic.py --train_data_type PolypSegData --test_data_type CVC-ColonDB
+```
+
+```
+# Example for teacher and on ACDC dataset
+CUDA_VISIBLE_DEVICES="0" python train_ACDC.py 
+```
+
+### Knowledge Distillation Training
 
 To train the student model under our proposed Assimilation Distillation framework, run:
 
 ```
-# Example for Synapse dataset
-python train.py --dataset Synapse --batch_size 24 --lr 0.01 --teacher_path ./weights/teacher_synapse.pth
+# Example for teacher and on Synapse dataset
+CUDA_VISIBLE_DEVICES="0"  python train.py  --split='train' --warmup --AdamW --max_epochs=300 --stop_epoch=300 --vit_name='vit_l'
+```
 
-# Example for ACDC dataset
-python train.py --dataset ACDC --batch_size 16 --lr 0.05 --teacher_path ./weights/teacher_acdc.pth
+```
+# Example for teacher and on Polyp dataset
+python train_isic.py --train_data_type PolypSegData --test_data_type CVC-ColonDB
+```
+
+```
+# Example for teacher and on ACDC dataset
+CUDA_VISIBLE_DEVICES="0" python train_ACDC.py 
 ```
 
 ### Evaluation
 
-To evaluate the performance (e.g., Dice score, HD95) of the trained student model:
+To evaluate the performance (e.g., Dice score, HD95) of the trained teacher and student model:
 
 ```
-python test.py --dataset Synapse --checkpoint ./weights/student_synapse_best.pth
+# Example for teacher and on Synapse dataset
+CUDA_VISIBLE_DEVICES="0" python test.py --is_savenii --stage=3
+```
+
+```
+# Example for teacher and on Polyp dataset
+python test_isic.py --train_data_type PolypSegData --test_data_type CVC-ColonDB
+```
+
+```
+# Example for teacher and on ACDC dataset
+CUDA_VISIBLE_DEVICES="0" python test_ACDC.py 
 ```
 
 ## 🙏 Acknowledgement
