@@ -46,15 +46,21 @@ For dataset downloading and processing pipelines, our repository follows the sta
 
 ## 📦 Pre-trained Models
 
-We provide the pre-trained weights for both the Teacher and Student models evaluated in our paper. You can download them from the links below:
+We provide the pre-trained weights for both the Teacher and Student models in  **training stage **. You can download them from the links below:
 
 | Dataset | Download Link |
 | :--- | :--- |
-| **Synapse** | [teacher](https://github.com/SLDGroup/EMCAD) and [student]()|
-| **ACDC** | [teacher](https://github.com/SLDGroup/EMCAD) and [student]()|
-| **Polyp** | [teacher](https://github.com/Inha-CVAI/MADGNet) and [student]()|
+| **Synapse** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **ACDC** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Polyp** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
 
-*(Note: Replace the placeholder links above with your actual Google Drive / Baidu Pan / OneDrive links before publishing).*
+We provide the pre-trained weights for both the Teacher and Student models in  **knowledge distillation training stage **. You can download them from the links below:
+
+| Dataset | Download Link |
+| :--- | :--- |
+| **Synapse** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **ACDC** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Polyp** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
 
 
 ## 🚀 Running the Code
