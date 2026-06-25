@@ -17,7 +17,7 @@
 
 Please follow the steps below to build the required environment for this project:
 
-```bash
+bash```
 # 1. Create and activate a conda environment
 conda create -n emcadenv python=3.8
 conda activate emcadenv
