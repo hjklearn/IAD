@@ -30,6 +30,7 @@ pip install mmcv-full -f [https://download.openmmlab.com/mmcv/dist/cu113/torch1.
 
 # 4. Install other dependencies
 pip install -r requirements.txt
+```bash
 
 ## 🗂️ Dataset Preparation
 
