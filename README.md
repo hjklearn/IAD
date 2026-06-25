@@ -58,9 +58,9 @@ We provide the pre-trained weights for both the Teacher and Student models in kn
 
 | Knowledge distillation training Datasets | Model pre-trained weights Download Link |
 | :--- | :--- |
-| **Synapse** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
-| **ACDC** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
-| **Polyp** | [teacher](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) and [student](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Synapse** | [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **ACDC** | [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
+| **Polyp** | [student pre-trained weights and prediction results](https://pan.baidu.com/s/1AplUfjHojNvPJykyecSwig?pwd=2234) Code: 2234|
 
 
 ## 🚀 Running the Code
