@@ -17,7 +17,7 @@
 
 Please follow the steps below to build the required environment for this project:
 
-```bash
+```
 # 1. Create and activate a conda environment
 conda create -n emcadenv python=3.8
 conda activate emcadenv
@@ -30,7 +30,7 @@ pip install mmcv-full -f [https://download.openmmlab.com/mmcv/dist/cu113/torch1.
 
 # 4. Install other dependencies
 pip install -r requirements.txt
-bash```
+```
 
 ## 🗂️ Dataset Preparation
 
@@ -58,20 +58,21 @@ We provide the pre-trained weights for both the Teacher and Student models evalu
 
 To train the student model under our proposed Assimilation Distillation framework, run:
 
-```bash
+```
 # Example for Synapse dataset
 python train.py --dataset Synapse --batch_size 24 --lr 0.01 --teacher_path ./weights/teacher_synapse.pth
 
 # Example for ACDC dataset
 python train.py --dataset ACDC --batch_size 16 --lr 0.05 --teacher_path ./weights/teacher_acdc.pth
+```
 
 ### 2. Evaluation
 
 To evaluate the performance (e.g., Dice score, HD95) of the trained student model:
 
-```bash
+```
 python test.py --dataset Synapse --checkpoint ./weights/student_synapse_best.pth
-
+```
 
 ## 📝 Citation
 
