@@ -17,7 +17,7 @@
 
 Please follow the steps below to build the required environment for this project:
 
-bash```
+```bash
 # 1. Create and activate a conda environment
 conda create -n emcadenv python=3.8
 conda activate emcadenv
@@ -30,7 +30,7 @@ pip install mmcv-full -f [https://download.openmmlab.com/mmcv/dist/cu113/torch1.
 
 # 4. Install other dependencies
 pip install -r requirements.txt
-```bash
+bash```
 
 ## 🗂️ Dataset Preparation
 
