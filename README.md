@@ -1,4 +1,4 @@
-Markdown# From Infusion to Assimilation Distillation for Medical Image Segmentation (CVPR 2026)
+# From Infusion to Assimilation Distillation for Medical Image Segmentation (CVPR 2026)
 
 ![Powered by](https://img.shields.io/badge/Based_on-Pytorch-blue?logo=pytorch) 
 ![last commit](https://img.shields.io/github/last-commit/hjklearn/GPIENet)
@@ -30,10 +30,67 @@ pip install mmcv-full -f [https://download.openmmlab.com/mmcv/dist/cu113/torch1.
 
 # 4. Install other dependencies
 pip install -r requirements.txt
-🗂️ Dataset PreparationFor dataset downloading and processing pipelines, our repository follows the standards established by previous works. Please refer to the following links to prepare your datasets:Download and Preparation: Follow the instructions provided in the MADGNet Repository.Processing Utilities: Please utilize the utils.py script provided by EMCAD: EMCAD/utils/utils.py.📦 Pre-trained ModelsWe provide the pre-trained weights for both the Teacher and Student models evaluated in our paper. You can download them from the links below:DatasetDownload LinkSynapseDownload HereACDCDownload HerePolypDownload Here(Note: Replace the placeholder links above with your actual Google Drive / Baidu Pan / OneDrive links before publishing).🙏 AcknowledgementWe are very grateful for the following excellent open-source works, which have provided the solid basis for our framework:timmEMCADMADGNetTransUNet📝 CitationIf you find our paper, code, or weights useful for your research, please consider citing our work:代码段@inproceedings{hong2026infusion,
+
+## 🗂️ Dataset Preparation
+
+For dataset downloading and processing pipelines, our repository follows the standards established by previous works. Please refer to the following links to prepare your datasets:
+
+*   **Download and Preparation:** Follow the instructions provided in the [MADGNet Repository]().
+*   **Processing Utilities:** Please utilize the `utils.py` script provided by EMCAD: [EMCAD/utils/utils.py]().
+
+## 📦 Pre-trained Models
+
+We provide the pre-trained weights for both the Teacher and Student models evaluated in our paper. You can download them from the links below:
+
+| Dataset | Download Link |
+| :--- | :--- |
+| **Synapse** | [Download Here]() |
+| **ACDC** | [Download Here]() |
+| **Polyp** | [Download Here]() |
+
+*(Note: Replace the placeholder links above with your actual Google Drive / Baidu Pan / OneDrive links before publishing).*
+
+
+## 🚀 Running the Code
+
+### 1. Training (Knowledge Distillation)
+
+To train the student model under our proposed Assimilation Distillation framework, run:
+
+```bash
+# Example for Synapse dataset
+python train.py --dataset Synapse --batch_size 24 --lr 0.01 --teacher_path ./weights/teacher_synapse.pth
+
+# Example for ACDC dataset
+python train.py --dataset ACDC --batch_size 16 --lr 0.05 --teacher_path ./weights/teacher_acdc.pth
+
+### 2. Evaluation
+
+To evaluate the performance (e.g., Dice score, HD95) of the trained student model:
+
+```bash
+python test.py --dataset Synapse --checkpoint ./weights/student_synapse_best.pth
+
+
+## 📝 Citation
+
+If you find our framework, code, or pre-trained models beneficial to your research, please consider citing our CVPR 2026 paper:
+
+```bibtex
+@inproceedings{hong2026infusion,
   title={From Infusion to Assimilation Distillation for Medical Image Segmentation},
   author={Hong, Jiankang and Luo, Ye and Liu, Yinan and Yuan, Junsong},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={20985--20995},
   year={2026}
 }
+
+
+## 🙏 Acknowledgement
+
+We are very grateful for the following excellent open-source works, which have provided the solid basis for our framework:
+
+*   [timm]()
+*   [EMCAD]()
+*   [MADGNet]()
+*   [TransUNet]()
