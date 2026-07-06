@@ -1,10 +1,10 @@
 # From Infusion to Assimilation Distillation for Medical Image Segmentation (CVPR 2026)
 
 ![Powered by](https://img.shields.io/badge/Based_on-Pytorch-blue?logo=pytorch) 
-![last commit](https://img.shields.io/github/last-commit/hjklearn/GPIENet)
-![GitHub](https://img.shields.io/github/license/hjklearn/GPIENet?logo=license)
-![](https://img.shields.io/github/repo-size/hjklearn/GPIENet?color=green)
-![](https://img.shields.io/github/stars/hjklearn/GPIENet)
+![last commit](https://img.shields.io/github/last-commit/hjklearn/IAD)
+![GitHub](https://img.shields.io/github/license/hjklearn/IAD?logo=license)
+![](https://img.shields.io/github/repo-size/hjklearn/IAD?color=green)
+![](https://img.shields.io/github/stars/hjklearn/IAD)
 [![Ask Me Anything!](https://img.shields.io/badge/Official%20-Yes-1abc9c.svg)](https://GitHub.com/hjklearn)
 
 > **This repository contains the official PyTorch implementation of our CVPR 2026 paper:**  
