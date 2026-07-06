@@ -11,6 +11,28 @@
 
 ---
 
+## 💡 Introduction
+
+Knowledge Distillation (KD) has shown immense potential in improving the performance of lightweight models for medical image segmentation. However, conventional KD methods often force the student network to rigidly mimic the teacher's features (**Infusion**), which can lead to feature mismatch and sub-optimal performance due to the inherent capacity gap between the two networks.
+
+To address this, we propose **IAD (Infusion to Assimilation Distillation)**. Our framework redefines the distillation process by transitioning from hard feature *infusion* to adaptive knowledge *assimilation*. This allows the student network to selectively digest and integrate the teacher's knowledge based on its own structural capacity, preserving crucial anatomical boundaries and topologies in medical images.
+
+## ✨ Highlights / Key Contributions
+
+- 🚀 **A Novel KD Paradigm:** We shift the distillation process from conventional "Infusion" to an adaptive "Assimilation" mechanism, bridging the semantic gap between teacher and student models.
+- 🧠 **Domain-Specific Design:** Specifically optimized for medical image segmentation, effectively handling complex anatomical structures and class imbalances.
+- 🏆 **State-of-the-Art Performance:** Achieves superior segmentation accuracy on mainstream medical datasets (e.g., *[Insert Dataset 1]*, *[Insert Dataset 2]*) while maintaining a highly efficient inference speed.
+- 🧩 **Plug-and-Play:** The proposed IAD module can be seamlessly integrated into various existing CNN and Transformer-based segmentation architectures.
+
+## 🖼️ Framework
+
+<div align="center">
+  <!-- 请将下面 src 的路径替换为你仓库中架构图的真实路径 -->
+  <img src="assets/framework.png" alt="IAD Framework" width="90%">
+  <br>
+  <em>Figure 1: The overall architecture of the proposed IAD (Infusion to Assimilation Distillation) framework.</em>
+</div>
+
 ## 🛠️ Environment Setup
 
 Please follow the steps below to build the required environment for this project:
