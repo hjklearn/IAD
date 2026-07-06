@@ -17,6 +17,7 @@ Although foundation models (e.g. SAM) perform remarkably in medical image segmen
 allows lightweight models to inherit the representational capabilities of large models, thereby mitigating this issue. Existing KD methods enhance student performance, but due
 to teacher-student different feature advantages, they neglect to internalize and integrate student’s semantic information adaptively after knowledge transfer, causing poor knowledge assimilation and limiting gains and generalization. To address this limitation, we propose a novel medical image segmentation framework, which is **infusion to assimilation distillation (IAD)**. In Knowledge Infusion Stage (KIS), to semantically align teacher-student prediction distributions, soft-label distillation is combined with class-weighted prototype alignment strategy. In Knowledge Assimilation Stage (KAS), to promote adaptively semantic assimilation, a contrastive semantic self-optimization strategy refines student predictions through positive and negative sample pairs and imposes reverse constraints on encoder features to enhance semantic consistency.
 </p>
+
 ## ✨ Key Contributions
 <ul>
  <li align="justify"> - 🚀 **A Novel KD Paradigm:** We shift the distillation process from conventional "Infusion" to an adaptive "Assimilation" mechanism, bridging the semantic gap between teacher and student models.
@@ -25,6 +26,7 @@ to teacher-student different feature advantages, they neglect to internalize and
 tion gain on ISIC2018, PH2, BUSI, and STU datasets, out performing mainstream KD methods. 
  <li align="justify"> - 🧩 **Plug-and-Play:** The proposed IAD module can be seamlessly integrated into various existing CNN and Transformer-based segmentation architectures.
 </ul>>
+
 ## 🖼️ Framework
 
 <div align="center">
