@@ -19,7 +19,7 @@ to teacher-student different feature advantages, they neglect to internalize and
 
 ## ✨ Key Contributions
 <ul>
- <li align="justify"> - 🚀 **A Novel KD Paradigm:** We shift the distillation process from conventional "Infusion" to an adaptive "Assimilation" mechanism, bridging the semantic gap between teacher and student models.
+ <li align="justify"> - 🚀 <b>A Novel KD Paradigm:</b> We shift the distillation process from conventional "Infusion" to an adaptive "Assimilation" mechanism, bridging the semantic gap between teacher and student models.
  <li align="justify"> - 🧠 **Domain-Specific Design:** Specifically optimized for medical image segmentation, effectively handling complex anatomical structures and class imbalances.
  <li align="justify"> - 🏆 **State-of-the-Art Performance:** IAD achieves DICE gains of 4.32% on Synapse, 1.85% on ACDC, and 2.42% on Polyp datasets, and delivers an average 4.16% generaliza
 tion gain on ISIC2018, PH2, BUSI, and STU datasets, out performing mainstream KD methods. 
