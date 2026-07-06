@@ -29,7 +29,7 @@ tion gain on ISIC2018, PH2, BUSI, and STU datasets, out performing mainstream KD
 
 <div align="center">
   <!-- 请将下面 src 的路径替换为你仓库中架构图的真实路径 -->
-  <img src="https://github.com/hjklearn/IAD/blob/main/fig2.pdf" alt="IAD Framework" width="90%">
+  <img src="https://github.com/hjklearn/IAD/blob/main/fig3.png" alt="IAD Framework" width="90%">
   <br>
   <em>Figure 1: The overall architecture of the proposed IAD (Infusion to Assimilation Distillation) framework.</em>
 </div>
