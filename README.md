@@ -152,6 +152,12 @@ We are very grateful for the following excellent open-source works, which have p
 *   [TransUNet](https://github.com/Beckschen/TransUNet)
 
 
+## 📧 Contact
+If you encounter any issues with this framework, code, or pre-trained models, or if you have any suggestions or collaboration inquiries, please feel free to reach out.
+
+Email: [2510259@tongji.edu.cn]
+
+
 ## 📝 Citation
 
 If you find our framework, code, or pre-trained models beneficial to your research, please consider citing our CVPR 2026 paper:
